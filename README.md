@@ -129,13 +129,6 @@ The ETL workflow was developed using SQL Server Integration Services (SSIS) and 
 
 ---
 
-## 📸 Dashboard Preview
-
-### 📊 Main Dashboard
-
-![Dashboard](Images/dashboard_overview.png)
-
----
 
 ## 🚀 Key Skills Demonstrated
 
