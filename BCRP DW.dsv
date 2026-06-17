@@ -1,0 +1,194 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a7c7b83f-2d5c-481c-b9d4-06f11ae1a27a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>BCRP DW</ID>
+  <Name>BCRP DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BCRP DW</DataSourceID>
+  <Schema>
+    <xs:schema id="BCRP_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="BCRP_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4a03c0f1-22d1-40be-9534-0197174f16f4">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Auditoria_Carga" msprop:design-time-name="cb55cfd7-a659-45c2-8575-5647405f507c" msprop:DbTableName="Auditoria_Carga" msprop:FriendlyName="Auditoria_Carga" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdCarga" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f56208dd-3c45-405e-96d3-023c3c3c8641" msprop:DbColumnName="IdCarga" msprop:FriendlyName="IdCarga" type="xs:int" />
+                  <xs:element name="FechaCarga" msprop:design-time-name="d42feaac-9ba4-4f5d-b15c-a27a8600937f" msprop:DbColumnName="FechaCarga" msprop:FriendlyName="FechaCarga" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Fuente" msprop:design-time-name="d6d04b54-798d-46d3-afa4-6844345c1ae6" msprop:DbColumnName="Fuente" msprop:FriendlyName="Fuente" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Registros" msprop:design-time-name="46b362b8-1f99-481b-88c7-d6f926339b4b" msprop:DbColumnName="Registros" msprop:FriendlyName="Registros" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Fecha" msprop:design-time-name="855ad054-5db0-4b6b-bd76-97acd551f3af" msprop:DbTableName="Dim_Fecha" msprop:FriendlyName="Dim_Fecha" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FechaKey" msprop:design-time-name="473c60a5-eab4-4b71-bb29-8d9afbc83e3c" msprop:DbColumnName="FechaKey" msprop:FriendlyName="FechaKey" type="xs:int" />
+                  <xs:element name="Fecha" msprop:design-time-name="3a3d31f4-b212-47dd-bc2b-bb008b376bf4" msprop:DbColumnName="Fecha" msprop:FriendlyName="Fecha" type="xs:dateTime" />
+                  <xs:element name="Anio" msprop:design-time-name="9712e6be-00be-43bb-bb15-8ec043e7fcbd" msprop:DbColumnName="Anio" msprop:FriendlyName="Anio" type="xs:int" />
+                  <xs:element name="Mes" msprop:design-time-name="e5c04b74-db30-4aae-8d01-f8a55d5b74b0" msprop:DbColumnName="Mes" msprop:FriendlyName="Mes" type="xs:int" />
+                  <xs:element name="NombreMes" msprop:design-time-name="b1f80d6b-e96c-4779-ae25-97b5367d77c2" msprop:DbColumnName="NombreMes" msprop:FriendlyName="NombreMes">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Trimestre" msprop:design-time-name="c4318783-cbea-4000-8d91-8c0b6a3d2e8b" msprop:DbColumnName="Trimestre" msprop:FriendlyName="Trimestre" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Fuente" msprop:design-time-name="31cbb9ef-6228-4180-a28b-1c9807f82c57" msprop:DbTableName="Dim_Fuente" msprop:FriendlyName="Dim_Fuente" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FuenteKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="bae8154b-0ec3-4fa2-8bb2-387fa7f2d561" msprop:DbColumnName="FuenteKey" msprop:FriendlyName="FuenteKey" type="xs:int" />
+                  <xs:element name="Fuente" msprop:design-time-name="e35010e7-141a-41fa-8461-8956c4397628" msprop:DbColumnName="Fuente" msprop:FriendlyName="Fuente">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Indicador" msprop:design-time-name="ee20648f-7b6d-4a6c-a59e-2cab88357876" msprop:DbTableName="Dim_Indicador" msprop:FriendlyName="Dim_Indicador" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IndicadorKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="16e942b3-6b9e-423b-9f85-135b68a8ee6b" msprop:DbColumnName="IndicadorKey" msprop:FriendlyName="IndicadorKey" type="xs:int" />
+                  <xs:element name="Indicador" msprop:design-time-name="b7eb40a0-ff2b-451e-b1ea-f6e4f2509041" msprop:DbColumnName="Indicador" msprop:FriendlyName="Indicador">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_IndicadoresEconomicos" msprop:design-time-name="a52f4b9b-656e-4c63-b3cf-fbea0a3d6d8e" msprop:DbTableName="Fact_IndicadoresEconomicos" msprop:FriendlyName="Fact_IndicadoresEconomicos" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9225ef9d-2601-496a-a546-029632d04888" msprop:DbColumnName="FactID" msprop:FriendlyName="FactID" type="xs:int" />
+                  <xs:element name="FechaKey" msprop:design-time-name="7bdc15fd-3d7e-4a54-99b9-e5efe85299bf" msprop:DbColumnName="FechaKey" msprop:FriendlyName="FechaKey" type="xs:int" />
+                  <xs:element name="IndicadorKey" msprop:design-time-name="9bc4f00d-0af1-4edb-b35b-8a72247ddccd" msprop:DbColumnName="IndicadorKey" msprop:FriendlyName="IndicadorKey" type="xs:int" />
+                  <xs:element name="FuenteKey" msprop:design-time-name="c1e22ff6-24c1-46b7-80b5-ca03af571c9e" msprop:DbColumnName="FuenteKey" msprop:FriendlyName="FuenteKey" type="xs:int" />
+                  <xs:element name="Valor" msprop:design-time-name="3e318f9f-d61b-491b-982d-84a5949b7f66" msprop:DbColumnName="Valor" msprop:FriendlyName="Valor" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_PronosticoInflacion" msprop:design-time-name="980a6f6a-4ffc-49ba-8272-c385b0c39bcb" msprop:DbTableName="Fact_PronosticoInflacion" msprop:FriendlyName="Fact_PronosticoInflacion" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PronosticoID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ce2a2071-c897-43dc-b940-702f6d641162" msprop:DbColumnName="PronosticoID" msprop:FriendlyName="PronosticoID" type="xs:int" />
+                  <xs:element name="FechaKey" msprop:design-time-name="2920f5b2-2b65-440e-8b5e-b2426e7ff7ee" msprop:DbColumnName="FechaKey" msprop:FriendlyName="FechaKey" type="xs:int" />
+                  <xs:element name="InflacionReal" msprop:design-time-name="678beff6-1d2b-42b6-86d7-73ab25f8de28" msprop:DbColumnName="InflacionReal" msprop:FriendlyName="InflacionReal" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="InflacionPronosticada" msprop:design-time-name="405a6976-89fe-4b7b-9136-1d72b8af2543" msprop:DbColumnName="InflacionPronosticada" msprop:FriendlyName="InflacionPronosticada" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sysdiagrams" msprop:design-time-name="942fe99d-6887-47b4-ae05-319686095051" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" msprop:design-time-name="de43c696-2842-406b-a924-d9f2f71b4b04" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="principal_id" msprop:design-time-name="471bda34-e476-42ec-b94c-c2e9fc5d0de7" msprop:DbColumnName="principal_id" msprop:FriendlyName="principal_id" type="xs:int" />
+                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7a999a25-07db-430c-b7f8-437094dcbed0" msprop:DbColumnName="diagram_id" msprop:FriendlyName="diagram_id" type="xs:int" />
+                  <xs:element name="version" msprop:design-time-name="3464ac33-9cd3-42d8-804f-5a0ca02d2293" msprop:DbColumnName="version" msprop:FriendlyName="version" type="xs:int" minOccurs="0" />
+                  <xs:element name="definition" msprop:design-time-name="ad0f3d7c-7af8-4303-9a5e-7575dfcfb40e" msprop:DataSize="0" msprop:DbColumnName="definition" msprop:FriendlyName="definition" type="xs:base64Binary" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Fecha" />
+          <xs:field xpath="FechaKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Fuente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Fuente" />
+          <xs:field xpath="FuenteKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Indicador_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Indicador" />
+          <xs:field xpath="IndicadorKey" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_IndicadoresEconomicos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_IndicadoresEconomicos" />
+          <xs:field xpath="FactID" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_PronosticoInflacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_PronosticoInflacion" />
+          <xs:field xpath="PronosticoID" />
+        </xs:unique>
+        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_sysdiagrams" />
+          <xs:field xpath="diagram_id" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Pron__Fecha__2F10007B" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_PronosticoInflacion" />
+          <xs:field xpath="FechaKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Fuente" refer="dbo_Dim_Fuente_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_IndicadoresEconomicos" />
+          <xs:field xpath="FuenteKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Indicador" refer="dbo_Dim_Indicador_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_IndicadoresEconomicos" />
+          <xs:field xpath="IndicadorKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Fecha" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_IndicadoresEconomicos" />
+          <xs:field xpath="FechaKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <BCRP_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

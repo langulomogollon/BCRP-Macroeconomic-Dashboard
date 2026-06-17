@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ProyectoMultidimensionalBCRP", "ProyectoMultidimensionalBCRP.dwproj", "{1A314E19-A356-441E-B95F-ABE08FACE991}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A314E19-A356-441E-B95F-ABE08FACE991}.Development|Default.ActiveCfg = Development
+		{1A314E19-A356-441E-B95F-ABE08FACE991}.Development|Default.Build.0 = Development
+		{1A314E19-A356-441E-B95F-ABE08FACE991}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EDB4602-D9E8-4D8E-BD83-907D8D215654}
+	EndGlobalSection
+EndGlobal
