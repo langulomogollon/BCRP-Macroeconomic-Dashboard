@@ -1,7 +1,7 @@
 # 📊 BCRP Macroeconomic Monitoring Dashboard
 
 <p align="center">
-  <img src="Images/dashboard_overview.png" width="900">
+     Technologies
 </p>
 
 <p align="center">
